@@ -1,41 +1,29 @@
 import React from 'react';
+import Gallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css'; // Import the styles
 
 const Blog = () => {
+  const images = [
+    {
+      original: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
+      thumbnail: 'https://example.com/thumb1.jpg',
+      description: 'Image 1 description',
+    },
+    {
+      original: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
+      thumbnail: 'https://example.com/thumb2.jpg',
+      description: 'Image 2 description',
+    },
+    // Add more images as needed
+  ];
+
   return (
-    <>
-      <div className="container mx-auto">
-        <div className="text-center">
-          <h1 className="italic">
-            <span className="list-disc">My Gallery</span>
-          </h1>
-        </div>
-      </div>
+    <div>
+      <h1 className='mt-5 mb-2 font-bold text-center'>Blog</h1>
+        <hr className='w-11 mb-3 bg-pink-400 h-1 m-auto'></hr>
 
-      {/* *************image slide*********** */}
-      <div className="container mx-auto box mt-8">
-        <div id="myCarousel" className="carousel slide" data-ride="carousel">
-          {/* Indicators */}
-          <ol className="carousel-indicators">
-            {/* ... Your existing indicators */}
-          </ol>
-
-          <div className="carousel-inner" id="gallery" role="listbox">
-            {/* ... Your existing carousel items */}
-          </div>
-
-          {/* Left and right controls */}
-          <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      {/* ******************* end image slide************* */}
-    </>
+      <Gallery items={images} />
+    </div>
   );
 };
 

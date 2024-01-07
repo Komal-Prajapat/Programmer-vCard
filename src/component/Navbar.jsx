@@ -49,11 +49,11 @@ const Navbar = () => {
        <Gallery></Gallery>
       </div>
 
-      <div className="GALLERY">
+      {/* <div className="GALLERY">
       <Prodcuts></Prodcuts>
-      </div>
+      </div> */}
 
-      <div className="GALLERY">
+      <div className="Blog">
      <Blog></Blog>
       </div>
 

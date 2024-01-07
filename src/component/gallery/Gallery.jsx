@@ -3,8 +3,8 @@ import './style.css'
 const Gallery = () => {
   return (
     <>
-        <h1 className='mt-5 font-bold text-center'>Gallery</h1>
-        <hr className='w-11 bg-pink-400 h-1 m-auto'></hr>
+        <h1 className='mt-5  font-bold text-center'>Gallery</h1>
+        <hr className='w-11  bg-pink-400 h-1 m-auto'></hr>
 
             <div className="gallery flex mt-16 m-auto">
 

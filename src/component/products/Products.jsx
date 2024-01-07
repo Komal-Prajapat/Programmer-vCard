@@ -1,36 +1,21 @@
 import React from 'react';
-import './Prodcuts.css';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'; // Import the styles
 
-const Prodcuts = () => {
-  const imageAddresses = [
-    'https://via.placeholder.com/150?text=Product1',
-    'https://via.placeholder.com/150?text=Product2',
-    'https://via.placeholder.com/150?text=Product3',
-    'https://via.placeholder.com/150?text=Product1',
-    'https://via.placeholder.com/150?text=Product2',
-    'https://via.placeholder.com/150?text=Product3',
-    // ... add more image addresses
+const Products = () => {
+  const images = [
+    'https://example.com/image1.jpg',
+    'https://example.com/image2.jpg',
+    'https://example.com/image3.jpg',
+    // Add more image URLs as needed
   ];
 
   return (
-    <>
-      <h1 className='mt-5 font-bold text-center'>Products</h1>
-      <hr className='w-11 bg-blue-400 h-1 m-auto'></hr>
-
-      <div className="scrollable-container mt-5">
-        <div className="image-scroll flex">
-          {imageAddresses.map((address, index) => (
-            <img
-              key={index}
-              src={address}
-              alt={`Product ${index + 1}`}
-              className="image"
-            />
-          ))}
-        </div>
-      </div>
-    </>
+    <div>
+      <h1>My Image Slideshow</h1>
+      <Slide images={images} />
+    </div>
   );
 };
 
-export default Prodcuts;
+export default Products;
