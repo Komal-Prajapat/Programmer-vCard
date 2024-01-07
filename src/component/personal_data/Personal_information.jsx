@@ -7,7 +7,11 @@ import { faBirthdayCake, faEnvelope, faLocation, faMobile } from '@fortawesome/f
 const PersonalInformation = () => {
   return (
     <>
-      <div className="container bg-blue-50 w-full h-[100px] mt-16">
+    <h1 className='font-bold mt-5'>Contact US</h1>
+        <hr className='bg-red-300 h-1 w-12  m-auto' />
+      <div className="container  bg-blue-50 w-full h-[100px] mt-16">
+      
+
         <div className="row flex">
           <div className="email w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8">
             <div className="icon bg-pink-500 w-6 pl-1 rounded-full ">

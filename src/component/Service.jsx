@@ -5,39 +5,40 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 const Service = () => {
   return (
     <>
-      <h1 className='mt-3 font-bold '>Our Services</h1>
-      <hr className='w-24 bg-orange-300 h-1 m-auto'/>
-      <div className="webdesign flex mt-3">
-   
+      <h1 className='mt-3 font-bold text-3xl text-center'>Our Services</h1>
+      <hr className='w-24 bg-orange-300 h-1 m-auto mb-6' />
 
-        {/* Website Icon */}
-        <div className="website-icon w-11 h-[50px] bg-blue-100 rounded-lg flex items-center justify-center">
-          <FontAwesomeIcon icon={faGlobe} className="text-orange-300" />
+      {/* Service Card 1 */}
+      <div className="service-card flex items-center bg-white rounded-lg shadow-md p-6 mb-4">
+        {/* Icon */}
+        <div className="service-icon w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+          <FontAwesomeIcon icon={faGlobe} className="text-orange-300 text-2xl" />
         </div>
 
-        {/* Web Development */}
-        
-        <div className="webdata w-[89%] text-left ml-3">
-          <h1 className='font-bold'>Web Development</h1>
-          <p>Lorem ipsum, dolor sit amecupiditate quidem at quis.
-          Lorem ipsum dolor sit amet.</p>
+        {/* Content */}
+        <div className="service-info">
+          <h2 className='font-bold text-xl mb-2'>Web Development</h2>
+          <p className='text-gray-700'>
+            Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Cupiditate quidem at quis.
+            Lorem ipsum dolor sit amet.
+          </p>
         </div>
       </div>
 
-      <div className="webdesign flex mt-3">
-   
-
-        {/* Website Icon */}
-        <div className="website-icon w-11 h-[50px] bg-blue-100 rounded-lg flex items-center justify-center">
-          <FontAwesomeIcon icon={faGlobe} className="text-orange-300" />
+      {/* Service Card 2 */}
+      <div className="service-card flex items-center bg-white rounded-lg shadow-md p-6 mb-4">
+        {/* Icon */}
+        <div className="service-icon w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+          <FontAwesomeIcon icon={faGlobe} className="text-orange-300 text-2xl" />
         </div>
 
-        {/* Web Development */}
-        
-        <div className="webdata w-[89%] text-left ml-3">
-          <h1 className='font-bold'>Web Development</h1>
-          <p>Lorem ipsum, dolor sit amecupiditate quidem at quis.
-          Lorem ipsum dolor sit amet.</p>
+        {/* Content */}
+        <div className="service-info">
+          <h2 className='font-bold text-xl mb-2'>Another Service</h2>
+          <p className='text-gray-700'>
+            Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Cupiditate quidem at quis.
+            Lorem ipsum dolor sit amet.
+          </p>
         </div>
       </div>
     </>

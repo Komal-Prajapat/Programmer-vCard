@@ -3,12 +3,12 @@ import React from 'react';
 const Appointment = () => {
   return (
     <>
-      <div className="container mt-14">
+      <div className="container mt-16">
         <h1 className='font-bold'>Make An Appointment</h1>
         <hr className='bg-red-300 h-1 w-24 m-auto' />
 
         <form action="" className="mt-4">
-          <label htmlFor="date" className='text-left block'>Date</label>
+          <label htmlFor="date" className='text-left block ml-3'>Date</label>
           <input type="date" id="date" className='w-[95%] m-auto border p-2 rounded-sm' />
 
           <div className="time flex mt-4">

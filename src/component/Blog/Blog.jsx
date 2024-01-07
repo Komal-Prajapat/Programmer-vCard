@@ -6,12 +6,12 @@ const Blog = () => {
   const images = [
     {
       original: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
-      thumbnail: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
+      // thumbnail: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
       description: 'Image 1 description',
     },
     {
       original: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
-      thumbnail: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
+      // thumbnail: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
       description: 'Image 2 description',
     },
     // Add more images as needed
