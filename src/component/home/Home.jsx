@@ -3,6 +3,7 @@ import React from 'react';
 import Contact_Icon from '../Contact_Icon';
 import Personal_information from '../personal_data/Personal_information';
 
+
 const Home = () => {
   return (
     <div className='text-center'>
@@ -12,8 +13,8 @@ const Home = () => {
         <img className='w-full h-full object-cover rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFb6FyQeCKb0i4kDlmB_qLNGWVwJ7msimfhA&usqp=CAU " alt="" />
       </div>
 
-      <h1 className='mt-2 font-bold'>I-SoftZone</h1>
-      <p className='text-sm mb-3'>Pranay Gup</p>
+      <h1 className='mt-2 font-bold hover:text-blue-400 hover:scale-x-100'>I-SoftZone</h1>
+      <p className='text-sm mb-3 animate__animated Hover: scale-10'>Pranay Gupta</p>
       <Contact_Icon></Contact_Icon>
 
       <p className='mt-3 w-[85%] m-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro soluta, dolores odio eum saepe molestias. Sunt repellat quaerat sapiente facere aspernatur, enim facilis?</p>

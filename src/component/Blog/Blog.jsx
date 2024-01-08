@@ -1,16 +1,17 @@
 import React from 'react';
 import Gallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css'; // Import the styles
-
+import img1 from '../../assets/img1.jpg'
+import img2 from '../../assets/img1.jpg'
 const Blog = () => {
   const images = [
     {
-      original: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
+      original: img1,
       // thumbnail: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
       description: 'Image 1 description',
     },
     {
-      original: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
+      original: img2,
       // thumbnail: 'https://www.mooc.org/hubfs/applications-of-computer-programming.jpg',
       description: 'Image 2 description',
     },

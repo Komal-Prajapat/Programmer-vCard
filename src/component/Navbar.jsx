@@ -12,6 +12,8 @@ import PersonalInformation from './personal_data/Personal_information';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import Enquiry from './enquiry/Enquiry';
+import PaymentOnline from './Payment/PaymentOnline';
 
 // import './Navbar.css'; // Import your CSS file for styling
 
@@ -59,6 +61,7 @@ const Navbar = () => {
           <li><a href="#Appointment" onClick={closeNav}>Appointment</a></li>
           <li><a href="#Gallery" onClick={closeNav}>Gallery</a></li>
           <li><a href="#Blog" onClick={closeNav}>Blog</a></li>
+          <li><a href="#Enquiry" onClick={closeNav}>Enquiry</a></li>
         </ul>
       </nav>
 
@@ -83,14 +86,23 @@ const Navbar = () => {
           <Gallery></Gallery>
         </div>
 
-        {/* Uncomment the following section if you have a Products component */}
-        {/* <div className="products">
-          <Products></Products>
-        </div> */}
+        <div className="blog"  id='Enquiry'>
+          <PaymentOnline></PaymentOnline>
+        </div>
 
         <div className="blog"  id='Blog'>
           <Blog></Blog>
         </div>
+
+        <div className="blog"  id='Enquiry'>
+          <Enquiry></Enquiry>
+        </div>
+
+        
+       
+
+
+
       </div>
     </div>
   );

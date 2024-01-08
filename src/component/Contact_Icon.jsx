@@ -1,74 +1,63 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import {  faWhatsapp, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
+import { faWhatsapp, faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact_Icon = () => {
-
-
-  const openWhatsApp = (number) => {
+  const openWhatsApp = () => {
     // Replace with your actual WhatsApp functionality
-    alert('Opening WhatsApp with number: ' + number);
+    // For example, you can use a library like 'react-chat-widget' or 'react-whatsapp-widget'
+    alert('Opening WhatsApp');
   };
 
-
-  const openMail = (mailTo) => {
+  const openMail = () => {
     // Replace with your actual mail functionality
-    window.location.href = mailTo;
+    window.location.href = 'mailto:komalprajapat267@mail.com';
   };
 
   const openFacebook = () => {
-    // Replace with your actual Facebook functionality
-    alert('Opening Facebook');
+    // Replace 'your_facebook_username' with your actual Facebook username
+    const facebookLink = 'https://www.facebook.com/isoftzone/';
+    window.open(facebookLink, '_blank');
   };
 
-  const openInstagram = () => {
-    // Replace with your actual Instagram functionality
-    alert('Opening Instagram');
+  const openLinkedin = () => {
+    // Replace 'your_instagram_username' with your actual Instagram username
+    const Linkedin = 'https://www.linkedin.com/company/i-softzone/?originalSubdomain=in';
+    window.open(Linkedin, '_blank');
   };
 
   const openTwitter = () => {
     // Replace 'your_twitter_username' with your actual Twitter username
-    const twitterProfileUrl = `https://twitter.com/your_twitter_username`;
-    window.open(twitterProfileUrl, '_blank');
+    const twitterLink = 'https://twitter.com/isoftzone?lang=en';
+    window.open(twitterLink, '_blank');
   };
 
   return (
-    <div className="flex flex-wrap  items-center justify-center bg-gray-100 rounded-full p-2 space-x-4 sm:justify-start   w-[50%]
-    m-auto
-    ">
-      
-
+    <div className="flex flex-wrap items-center justify-center bg-gray-100 rounded-full p-2 space-x-4 sm:justify-start w-[50%] m-auto">
       {/* WhatsApp icon */}
-      <div className=" cursor-pointer hover:text-green-700 text-center ml-3">
-        <FontAwesomeIcon icon={faWhatsapp} className="text-1xl" onClick={() => openWhatsApp('+9893785834')} />
-        {/* <p className="text-xs">WhatsApp</p> */}
+      <div className="cursor-pointer hover:text-green-700 text-center ml-3" onClick={openWhatsApp}>
+        <FontAwesomeIcon icon={faWhatsapp} className="text-1xl" />
       </div>
 
-    
-
       {/* Mail icon */}
-      <div className=" cursor-pointer hover:text-purple-700 text-center ml-3">
-        <FontAwesomeIcon icon={faEnvelope} className="text-1xl" onClick={() => openMail('mailto:komalprajapat267@mail.com')} />
-        {/* <p className="text-xs">Mail</p> */}
+      <div className="cursor-pointer hover:text-purple-700 text-center ml-3" onClick={openMail}>
+        <FontAwesomeIcon icon={faEnvelope} className="text-1xl" />
       </div>
 
       {/* Facebook icon */}
-      <div className=" cursor-pointer hover:text-blue-700 text-center ml-3">
-        <FontAwesomeIcon icon={faFacebook} className="text-1xl" onClick={() => openFacebook()} />
-        {/* <p className="text-xs">Facebook</p> */}
+      <div className="cursor-pointer hover:text-blue-700 text-center ml-3" onClick={openFacebook}>
+        <FontAwesomeIcon icon={faFacebook} className="text-1xl" />
       </div>
 
       {/* Instagram icon */}
-      <div className=" cursor-pointer hover:text-pink-700 text-center ml-3">
-        <FontAwesomeIcon icon={faInstagram} className="text-1xl" onClick={() => openInstagram()} />
-        {/* <p className="text-xs">Instagram</p> */}
+      <div className="cursor-pointer hover:text-pink-700 text-center ml-3" onClick={openLinkedin}>
+        <FontAwesomeIcon icon={faLinkedin} className="text-1xl" />
       </div>
 
-      <div className=" cursor-pointer hover:text-blue-700 text-center ml-3">
-        <FontAwesomeIcon icon={faTwitter} className="text-1xl" onClick={() => openTwitter()} />
-        {/* <p className="text-xs">Twitter</p> */}
+      {/* Twitter icon */}
+      <div className="cursor-pointer hover:text-blue-700 text-center ml-3" onClick={openTwitter}>
+        <FontAwesomeIcon icon={faTwitter} className="text-1xl" />
       </div>
     </div>
   );

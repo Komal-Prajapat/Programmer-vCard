@@ -16,8 +16,8 @@ const Service = () => {
         </div>
 
         {/* Content */}
-        <div className="service-info">
-          <h2 className='font-bold text-xl mb-2'>Web Development</h2>
+        <div className="service-info ..">
+          <h2 className='font-bold text-xl mb-2 '>Web Development</h2>
           <p className='text-gray-700'>
             Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Cupiditate quidem at quis.
             Lorem ipsum dolor sit amet.
