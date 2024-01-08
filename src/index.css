@@ -27,7 +27,7 @@ body{
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha channel (fourth parameter) for transparency */
+  background-color: rgba(0, 0, 0, 0.7); 
   width: 100px;
   height: 100vh;
   overflow: hidden;
@@ -41,12 +41,12 @@ body{
 }
 
 .navbar li {
-  padding: 10px;
+  padding: 20px;
 }
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color:white;
 }
 
 .navbar.open {
@@ -56,4 +56,6 @@ body{
   position: fixed;
   left: 0px;
   top: 50%;
+  font-size: xx-large;
+
 }

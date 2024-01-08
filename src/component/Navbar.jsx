@@ -8,6 +8,11 @@ import Products from './products/Products';
 import Blog from './Blog/Blog';
 import Contact_Icon from './Contact_Icon';
 import PersonalInformation from './personal_data/Personal_information';
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+
 // import './Navbar.css'; // Import your CSS file for styling
 
 const Navbar = () => {
@@ -35,13 +40,19 @@ const Navbar = () => {
 
   return (
     <div>
-      {/* Button to toggle navigation */}
-      <button onClick={toggleNav} className="nav-toggle-button navbarbutton">
-        {isNavOpen ? '<' : '>'}
-      </button>
+    
+
+
+
+      {/* Main content */}
+      <div className='container w-full sm:w-[40%] h-[400px] sm:m-auto '>
+        {/* Button to toggle navigation */}
+        <button onClick={toggleNav} className="nav-toggle-button navbarbutton font-bold">
+      <FontAwesomeIcon icon={isNavOpen ? faAngleLeft : faAngleRight} />
+    </button>
 
       {/* Navigation bar */}
-      <nav className={`navbar ${isNavOpen ? 'open' : ''} pt-[10%]`} >
+      <nav className={`navbar ${isNavOpen ? 'open' : ''} pt-[50%]`} >
         <ul>
           <li><a href="#home" onClick={closeNav}>home</a></li>
           <li><a href="#Contact" onClick={closeNav}>Contact</a></li>
@@ -51,8 +62,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      {/* Main content */}
-      <div className='container w-full sm:w-[40%] h-[400px] sm:m-auto'>
+
         <div className="homepage m-0" id="home">
           <Home></Home>
         </div>
