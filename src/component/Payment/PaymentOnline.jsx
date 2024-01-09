@@ -43,11 +43,11 @@ const PaymentOnline = () => {
         <div className="bank-account-info-container mt-6 text-left">
           <h2 className='font-bold text-xl mb-3'>Bank Account Information</h2>
           <ul>
-            <li ><strong>Bank Name:</strong><span className='m-16'> {bankName}</span></li>
-            <li><strong>IFSC code:</strong><span className='m-16'> {ifscCode}</span></li>
-            <li><strong>Account Holder Name:</strong> <span className='m-5'>{accountHolderName}</span></li>
-            <li><strong>Account Number:</strong> <span className='m-10'>{accountNumber}</span></li>
-            <li><strong>Account Type:</strong> <span className='m-10'>{accountType}</span></li>
+            <li ><strong>Bank Name:</strong><span className='m-'> {bankName}</span></li>
+            <li><strong>IFSC code:</strong><span className='m-1'> {ifscCode}</span></li>
+            <li><strong>Account Holder Name:</strong> <span className='m-'>{accountHolderName}</span></li>
+            <li><strong>Account Number:</strong> <span className='m-'>{accountNumber}</span></li>
+            <li><strong>Account Type:</strong> <span className='m-'>{accountType}</span></li>
           </ul>
         </div>
 
