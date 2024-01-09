@@ -42,7 +42,16 @@ const Navbar = () => {
 
   return (
     <div>
-    
+    <nav className={`navbar ${isNavOpen ? 'open' : ''} pt-[50%]`} >
+        <ul>
+          <li className= ' bg-black p-3'><a href="#home" onClick={closeNav}>home</a></li>
+          <li className='bg-black mt-2'><a href="#Contact" onClick={closeNav}>Contact</a></li>
+          <li className='bg-black mt-2'><a href="#Appointment" onClick={closeNav}>Appointment</a></li>
+          <li className='bg-black mt-2'><a href="#Gallery" onClick={closeNav}>Gallery</a></li>
+          <li className='bg-black mt-2'><a href="#Blog" onClick={closeNav}>Blog</a></li>
+          <li className='bg-black mt-2'><a href="#Enquiry" onClick={closeNav}>Enquiry</a></li>
+        </ul>
+      </nav>
 
 
 
@@ -54,16 +63,7 @@ const Navbar = () => {
     </button>
 
       {/* Navigation bar */}
-      <nav className={`navbar ${isNavOpen ? 'open' : ''} pt-[50%]`} >
-        <ul>
-          <li><a href="#home" onClick={closeNav}>home</a></li>
-          <li><a href="#Contact" onClick={closeNav}>Contact</a></li>
-          <li><a href="#Appointment" onClick={closeNav}>Appointment</a></li>
-          <li><a href="#Gallery" onClick={closeNav}>Gallery</a></li>
-          <li><a href="#Blog" onClick={closeNav}>Blog</a></li>
-          <li><a href="#Enquiry" onClick={closeNav}>Enquiry</a></li>
-        </ul>
-      </nav>
+      
 
 
         <div className="homepage m-0" id="home">

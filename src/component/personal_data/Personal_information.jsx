@@ -52,7 +52,7 @@ const PersonalInformation = () => {
               <FontAwesomeIcon icon={faBirthdayCake} className="mr-2" />
             </div>
             <p className='text-black'>Date of birthday</p>
-            <p className='font-bold text-black'>9 November 2002</p>
+            <p className='font-bold text-black'>9 Nov2002</p>
           </div>
 
           <div className="mobile w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-purple-300" onClick={handleLocationClick}>
