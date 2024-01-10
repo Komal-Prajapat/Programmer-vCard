@@ -3,11 +3,11 @@ import React from 'react';
 const Appointment = () => {
   return (
     <>
-      <div className="container mt-16">
-        <h1 className='font-bold'>Make An Appointment</h1>
-        <hr className='bg-red-300 h-1 w-24 m-auto' />
+      <div className="container mt-[60px]" data-aos="fade-right" data-aos-duration="800">
+        <h1 className='font-bold text-2xl  '>Make An Appointment</h1>
+        <hr className='bg-blue-400 h-1 mt-2 w-28 m-auto' />
 
-        <form action="" className="mt-4">
+        <form action="" className="mt-4" data-aos="flip-down">
           <label htmlFor="date" className='text-left block ml-3'>Date</label>
           <input type="date" id="date" className='w-[95%] m-auto border p-2 rounded-sm' />
 

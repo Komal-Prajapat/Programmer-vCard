@@ -17,14 +17,14 @@ const PaymentOnline = () => {
   const accountType = 'Current Account';
 
   return (
-    <div className="payment_container">
+    <div className="payment_container" data-aos="flip-down">
     
 
-      <h1 className='mt-5 mb-2 font-bold text-center'>Payment Online</h1>
-        <hr className='w-11 mb-3 bg-pink-400 h-1 m-auto'></hr>
+      <h1 className='mt-5 mb-2 font-bold text-center text-2xl '>Payment Online</h1>
+        <hr className='w-16 mb-3 bg-pink-400 h-1 mt-2 m-auto'></hr>
       
               
-      <div className="whitebox bg-gray-100 w-[96%] m-auto text-black rounded p-6">
+      <div className="whitebox w-[96%] m-auto text-black rounded p-6">
         <div className="payment-numbers-container">
           <div className="payment-number flex mb-4">
             <h3 className='font-bold'>Paytm Number:</h3>

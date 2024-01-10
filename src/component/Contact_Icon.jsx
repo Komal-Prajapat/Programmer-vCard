@@ -34,9 +34,10 @@ const Contact_Icon = () => {
   };
 
   return (
-    <div className="flex flex-wrap items-center justify-center bg-gray-100 rounded-full p-2 space-x-4 sm:justify-start w-[50%] m-auto mt-3">
+    <div className="flex flex-wrap items-center justify-center bg-gray-100 rounded-full p-2 space-x-4 sm:justify-start w-[50%] m-auto mt-3"  data-aos="zoom-in"
+    >
       {/* WhatsApp icon */}
-      <div className="cursor-pointer hover:text-green-700 text-center ml-3" onClick={openWhatsApp}>
+      <div className="cursor-pointer hover:text-green-700 text-center ml-3" onClick={openWhatsApp} >
         <FontAwesomeIcon icon={faWhatsapp} className="text-1xl" />
       </div>
 

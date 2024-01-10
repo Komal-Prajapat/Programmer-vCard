@@ -24,11 +24,14 @@ const PersonalInformation = () => {
 
   return (
     <>
-      <h1 className='font-bold mt-5'>Contact US</h1>
-      <hr className='bg-red-300 h-1 w-12 m-auto' />
+    <div data-aos="zoom-in-up"  data-aos-duration="800" >
+      <h1 className='font-bold text-2xl mt-5'>Contact US</h1>
+      </div>
+      <hr className='bg-blue-400 mt-2 h-1 w-16 m-auto' />
       <div className="container bg-blue-50 w-full h-[100px] mt-16">
-        <div className="row flex">
-          <div className="email w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-pink-400" onClick={handleEmailClick}>
+        <div className="row flex"  >
+          <div className="email w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-pink-400" onClick={handleEmailClick} data-aos="zoom-in-down"  data-aos-duration="800"  >
+
             <div className="icon bg-pink-500 w-6 pl-1 rounded-full">
               <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
             </div>
@@ -36,7 +39,7 @@ const PersonalInformation = () => {
             <p className='font-bold text-black'>jackie@gmail.com</p>
           </div>
 
-          <div className="email w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-orange-300 " onClick={handleMobileClick}>
+          <div className="email w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-orange-300 " onClick={handleMobileClick} data-aos="zoom-in-down"  data-aos-duration="800"  >
             <div className="icon bg-orange-400 w-6 pl-1 rounded-full">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
             </div>
@@ -47,7 +50,7 @@ const PersonalInformation = () => {
         </div>
 
         <div className="row flex">
-          <div className="email w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-blue-300" onClick={handleBirthdayClick}>
+          <div className="email w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-blue-300" onClick={handleBirthdayClick} data-aos="zoom-in-down"  data-aos-duration="800"  >
             <div className="icon bg-blue-400 w-6 pl-1 rounded-full">
               <FontAwesomeIcon icon={faBirthdayCake} className="mr-2" />
             </div>
@@ -55,7 +58,7 @@ const PersonalInformation = () => {
             <p className='font-bold text-black'>9 Nov2002</p>
           </div>
 
-          <div className="mobile w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-purple-300" onClick={handleLocationClick}>
+          <div className="mobile w-[200px] h-[70px] m-4 info_box email relative -top-14 text-white ml-8 hover:bg-purple-300" onClick={handleLocationClick} data-aos="zoom-in-down"  data-aos-duration="800"  >
             <div className="icon bg-purple-500 w-6 pl-1 rounded-full">
               <FontAwesomeIcon icon={faLocation} className="mr-2" />
             </div>

@@ -3,10 +3,12 @@ import './style.css'
 const Gallery = () => {
   return (
     <>
-        <h1 className='mt-5  font-bold text-center'>Gallery</h1>
-        <hr className='w-11  bg-pink-400 h-1 m-auto'></hr>
+<div data-aos="zoom-in">
+        <h1 className='mt-5  font-bold text-center text-3xl'>Gallery</h1>
+        <hr className='w-11  bg-blue-400 h-1 m-auto'></hr>
 
-            <div className="gallery flex mt-16 m-auto">
+</div>
+            <div className="gallery flex mt-16 m-auto"  data-aos="fade-right" >
 
                       <div className="img1">
                         <img src="https://www.mooc.org/hubfs/applications-of-computer-programming.jpg " alt=""  className=''/>

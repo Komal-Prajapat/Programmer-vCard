@@ -9,7 +9,6 @@ import Blog from './Blog/Blog';
 import Contact_Icon from './Contact_Icon';
 import PersonalInformation from './personal_data/Personal_information';
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import Enquiry from './enquiry/Enquiry';
@@ -18,7 +17,7 @@ import PaymentOnline from './Payment/PaymentOnline';
 // import './Navbar.css'; // Import your CSS file for styling
 
 const Navbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
 
   useEffect(() => {
     // Initialize smooth-scroll when the component mounts
@@ -37,7 +36,7 @@ const Navbar = () => {
   };
 
   const closeNav = () => {
-    setIsNavOpen(false);
+    setIsNavOpen(true);
   };
 
   return (
@@ -59,7 +58,7 @@ const Navbar = () => {
       <div className='container w-full sm:w-[40%] h-[400px] sm:m-auto '>
         {/* Button to toggle navigation */}
         <button onClick={toggleNav} className="nav-toggle-button navbarbutton font-bold">
-      <FontAwesomeIcon icon={isNavOpen ? faAngleLeft : faAngleRight} />
+      <FontAwesomeIcon icon={isNavOpen ? faAngleRight:faAngleLeft  } />
     </button>
 
       {/* Navigation bar */}
